@@ -1,20 +1,168 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Emirates Platinum Golden Card — premium card programme information and customer portal demo.">
-<title>Emirates Platinum Golden Card</title><link rel="stylesheet" href="styles.css"></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="A premium digital experience for the Platinum Golden Card programme."
+  />
+  <title>Platinum Golden Card | Premium Card Experience</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
 <body>
-<div class="notice">IMPORTANT: This website template is not affiliated with Emirates, Emirates NBD, the UAE Government, or any royal household. It does not issue a real card or move money. Replace this notice only after obtaining the necessary rights, licences and regulated-provider arrangements.</div>
-<header><a class="logo" href="#home"><span>EP</span> EMIRATES <b>PLATINUM</b> GOLDEN CARD</a>
-<button class="hamb" id="hamb">☰</button><nav id="nav"><a href="#home">Home</a><a href="#benefits">Benefits</a><a href="#card">The Card</a><a href="#apply">Apply</a><a href="#portal">Portal</a><a href="#contact">Contact</a></nav></header>
-<main>
-<section id="home" class="hero"><div><p class="eyebrow">PREMIUM CARD PROGRAMME</p><h1>Prestige, presented with purpose.</h1><p class="lead">A premium digital experience for the Emirates Platinum Golden Card programme, designed for clarity, security and exceptional service.</p><div class="buttons"><a class="btn gold" href="#apply">Register interest</a><a class="btn ghost" href="#card">Explore the card</a></div></div><div class="card3d"><div class="ctop"><b>EMIRATES</b><span>PLATINUM</span></div><div class="chip"></div><div class="number">•••• •••• •••• 4821</div><div class="cfoot"><span>CARDHOLDER</span><span>DEMO</span></div></div></section>
-<section id="benefits" class="section"><p class="eyebrow">DESIGNED AROUND YOU</p><h2>Premium service, without the noise.</h2><div class="features"><article><i>01</i><h3>Concierge experience</h3><p>Present a polished service journey for eligible customers and enquiries.</p></article><article><i>02</i><h3>Digital access</h3><p>Provide a secure customer portal ready to connect to an authorised provider.</p></article><article><i>03</i><h3>Clear information</h3><p>Fees, eligibility, risks and provider details can be presented transparently.</p></article></div></section>
-<section id="card" class="section split"><div><p class="eyebrow">THE CARD</p><h2>Platinum form. Golden character.</h2><p>Use this page to explain the actual features of your card once the issuer, fees, eligibility and regulated services have been confirmed.</p><ul><li>Premium card presentation</li><li>Digital customer access</li><li>Customer support journey</li><li>Provider and regulatory disclosures</li></ul></div><div class="spec"><div><span>PROGRAMME</span><b>Platinum Golden</b></div><div><span>STATUS</span><b>Website preview</b></div><div><span>ISSUER</span><b>To be confirmed</b></div></div></section>
-<section id="apply" class="section"><div class="sectionhead"><p class="eyebrow">REGISTER INTEREST</p><h2>Start your enquiry.</h2><p>For now this form collects no sensitive financial information and does not constitute a card application.</p></div>
-<form id="interest"><label>Full name<input required name="name" autocomplete="name"></label><label>Email<input required type="email" name="email" autocomplete="email"></label><label>Country/region<input name="country"></label><label>Message<textarea name="message" rows="4" placeholder="Tell us what you would like to know"></textarea></label><button class="btn gold" type="submit">Submit enquiry</button><p id="formmsg"></p></form></section>
-<section id="portal" class="section portal"><p class="eyebrow">CUSTOMER PORTAL</p><h2>Secure digital access</h2><p>The production portal should connect only to your authorised banking/card provider. The demonstration below uses no real credentials or money.</p><div class="login"><label>Email<input id="loginEmail" type="email" placeholder="demo@example.test"></label><label>Password<input id="loginPass" type="password" placeholder="Demo password"></label><button class="btn gold" id="login">Enter demo portal</button><p id="loginmsg"></p></div></section>
-<section id="dashboard" class="section dashboard hidden"><div class="dashhead"><div><p class="eyebrow">DEMO PORTAL</p><h2>Welcome, Colin Mark Ruffles</h2></div><button class="btn ghost" id="logout">Log out</button></div><div class="balances"><div><span>Available demo balance</span><b>£24,680.50</b><small>Not real funds</small></div><div><span>Current account</span><b>£18,430.50</b><small>•••• 4821</small></div><div><span>Savings</span><b>£6,250.00</b><small>•••• 9174</small></div></div><div class="transactions"><h3>Recent activity</h3><p>Salary — Demo <b>+£3,250.00</b></p><p>Grocery Market <b>−£86.40</b></p><p>Transfer received — Demo <b>+£500.00</b></p><p>Electricity — Demo <b>−£74.20</b></p></div></section>
-<section id="contact" class="section contact"><p class="eyebrow">CONTACT</p><h2>We’re here to help.</h2><p>Replace the placeholder contact details below with the genuine legal entity, address, phone and regulated provider information before publication.</p><div class="contactbox"><b>EMIRATES PLATINUM GOLDEN CARD</b><span>support@example.test</span><span>Legal entity: to be confirmed</span></div></section>
-</main>
-<footer><div><b>EMIRATES PLATINUM GOLDEN CARD</b><p>Premium card programme website template.</p></div><div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Complaints</a></div><p class="legal">This website template is not a bank, payment institution, e-money issuer or card issuer. No financial product is offered through this template. Regulatory and brand claims must be verified before launch.</p></footer>
-<script src="app.js"></script></body></html>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <span class="brand-mark">PG</span>
+        <span>PLATINUM GOLDEN CARD</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#benefits">Benefits</a>
+        <a href="#experience">Experience</a>
+        <a href="#enquire">Enquire</a>
+        <a href="#portal">Portal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-glow glow-gold"></div>
+      <div class="hero-glow glow-red"></div>
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <p class="eyebrow">PREMIUM CARD PROGRAMME</p>
+
+          <h1>
+            Prestige, presented
+            <span>with purpose.</span>
+          </h1>
+
+          <p class="hero-text">
+            A refined digital experience for the Platinum Golden Card
+            programme, designed around clarity, premium service and
+            seamless access.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#enquire" class="btn btn-primary">
+              Register interest
+            </a>
+
+            <a href="#benefits" class="btn btn-secondary">
+              Explore the card
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div>
+              <strong>Premium</strong>
+              <span>Service experience</span>
+            </div>
+
+            <div>
+              <strong>Digital</strong>
+              <span>Customer access</span>
+            </div>
+
+            <div>
+              <strong>Secure</strong>
+              <span>Information design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-stage">
+          <div class="floating-dot dot-one"></div>
+          <div class="floating-dot dot-two"></div>
+
+          <div class="premium-card">
+            <div class="card-top">
+              <span class="card-brand">PLATINUM</span>
+              <span class="contactless">)))</span>
+            </div>
+
+            <div class="chip"></div>
+
+            <p class="card-number">4821&nbsp;&nbsp; •••• &nbsp;&nbsp;•••• &nbsp;&nbsp;9174</p>
+
+            <div class="card-bottom">
+              <div>
+                <small>CARD MEMBER</small>
+                <strong>COLIN MARK RUFFLES</strong>
+              </div>
+
+              <div class="card-gold">
+                <span>GOLD</span>
+                <strong>PG</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-shadow"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Benefits -->
+    <section class="section benefits-section" id="benefits">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">DESIGNED AROUND YOU</p>
+            <h2>Premium service, <span>without the noise.</span></h2>
+          </div>
+
+          <p>
+            A cleaner, more considered digital experience built to present
+            information clearly and make customer journeys easier.
+          </p>
+        </div>
+
+        <div class="benefit-grid">
+
+          <article class="benefit-card">
+            <span class="number">01</span>
+            <h3>Concierge experience</h3>
+            <p>
+              Present a polished service journey for eligible customers
+              and enquiries.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="number">02</span>
+            <h3>Digital access</h3>
+            <p>
+              A streamlined customer portal designed around clarity,
+              convenience and future scalability.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <span class="number">03</span>
+            <h3>Clear information</h3>
+            <p>
+              Programme information, fees, eligibility and important
+              disclosures can be presented transparently.
+            </p>
+          </article>
+
+        </div>
+      </
