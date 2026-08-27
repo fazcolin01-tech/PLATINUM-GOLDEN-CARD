@@ -1,0 +1,5 @@
+const nav=document.querySelector("header"),hamb=document.getElementById("hamb");hamb.onclick=()=>nav.classList.toggle("open");
+document.querySelectorAll("nav a").forEach(a=>a.onclick=()=>nav.classList.remove("open"));
+document.getElementById("interest").addEventListener("submit",e=>{e.preventDefault();document.getElementById("formmsg").textContent="Thank you. This demonstration has recorded your enquiry locally in the browser only; no application was submitted to a financial institution.";e.target.reset()});
+document.getElementById("login").onclick=()=>{const email=document.getElementById("loginEmail").value.trim();if(!email){document.getElementById("loginmsg").textContent="Enter the demo email address.";return}document.getElementById("portal").classList.add("hidden");document.getElementById("dashboard").classList.remove("hidden");location.hash="dashboard";};
+document.getElementById("logout").onclick=()=>{document.getElementById("dashboard").classList.add("hidden");document.getElementById("portal").classList.remove("hidden");location.hash="portal"};
